@@ -1,0 +1,251 @@
+
+body { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+    background-color: #fff;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader span {
+    display: block;
+    height: 15px;
+    width: 5px;
+    background-color: #19e3d5;
+    margin: 0 7px;
+    border-radius: 10px;
+    animation: 1.2s upDown infinite;
+}
+
+
+.preloader span:first-child {
+    animation-delay: .15s;
+}
+
+.preloader span:nth-child(2) {
+    animation-delay: .3s;
+}
+
+.preloader span:nth-child(3) {
+    animation-delay: .45s;
+}
+
+.preloader span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.preloader span:last-child {
+    animation-delay: .75s;
+}
+
+@keyframes upDown {
+    0% {
+        height: 15px;
+        background-color: #19e3d5;
+    }
+    50% {
+        height: 60px;
+        background-color: #d33deb;
+    }
+    100% {
+        height: 15px;
+        background-color: #f00e43;
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+ul,
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.img{
+    display: block;
+    max-height: 45px;
+    width: auto;
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header__inner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    max-height: 90px;
+}
+.logo{
+    width: 20%;
+    margin-left: 5px;
+}
+.logo__img:hover{
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 50px;
+}
+.header__title{
+    padding-left: 15px;
+    width: 55%;
+}
+.search{
+    display: flex;
+    justify-content: start;
+    /* padding: 10px; */
+    align-items: center;
+    width: 25%;
+    height: 45px;
+    background-color: lightgrey;
+    border-radius: 35px;
+}
+.search__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.search__input{
+    background-color: lightgrey;
+    border: none;
+    margin-left: 10px;
+}
+.search__input:focus{
+    border-color: lightgrey;
+}
+.main__inner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    /* align-items: center; */
+}
+.asside{
+    width: 20%;
+}
+.menu__list{
+    display: flex;
+    flex-direction: column;
+}
+.menu__item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+}
+.menu__item:hover{
+    background-color: lightgrey;
+}
+.twitt__btn{
+    margin-top: 10px;
+    color: #fff;
+    background-color: #1D9BF0;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.main__content{
+    width: 55%;
+    padding-left: 15px;
+}
+.user-post{
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+}
+.user-post:hover{
+    background-color: #f6f6f6;
+}
+.user__info{
+    display: flex;
+    gap: 10px;
+}
+.post__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user__name,
+.post__title{
+    font-weight: bold;
+}
+.delete__btn{
+    margin: 0 5px 0 auto;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    color: red;
+    background-color: inherit;
+}
+.delete__btn:hover{
+    background-color: lightgrey;
+}
+
+
+.main__trends{
+    width: 25%;
+    margin-left: 10px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 35px;
+    padding: 20px 20px 10px 20px;
+
+}
+.warn__p{
+    font-weight: bold;
+}
+.some__p{
+    margin-top: 15px;
+}
+
+
+
+
+
+/* li:hover {
+    background: linear-gradient(to bottom);
+} */
+
+
+
